@@ -106,12 +106,10 @@ text
 
 ## Installation
 
+### 1. Cloner le projet
 
-## Livrables métiers
+```
+- git clone <url-du-projet>
 
-- **Report Excel** : `report.xls`
-  - Feuille 1 : CA par produit
-  - Feuille 2 : CA total
-- **CSV** : `vins_premium.csv` / `vins_ordinaires.csv`
-
----
+- cd Sport-data-solution
+```
