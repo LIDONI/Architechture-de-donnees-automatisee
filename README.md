@@ -22,10 +22,10 @@ Sport Data Solution souhaite encourager la pratique sportive de ses collaborateu
 ---
 
 ## Architecture technique
-┌─────────────┐ ┌─────────────┐ ┌─────────────┐
+┌─────────────┐  ┌─────────────┐  ┌─────────────┐
 │ Excel RH │ ──▶ │ Producer │ ──▶ │ Kafka │
-│ │ │ (Python) │ │ (Redpanda) │
-└─────────────┘ └─────────────┘ └──────┬──────┘
+│ │ │ (Python) │  │ (Redpanda) │
+└─────────────┘  └─────────────┘  └──────┬──────┘
 │
 ▼
 ┌─────────────┐ ┌─────────────┐ ┌─────────────┐
@@ -48,28 +48,44 @@ text
 ---
 
 ## Structure du projet
+
 Sport-data-solution/
 ├── data/
+
 │ ├── raw/
+
 │ │ ├── Donnees_RH.xlsx
 │ │ └── Donnees_Sportive.xlsx
+
 │ └── processed/
+
 │ ├── final_dataset.csv
 │ ├── strava_activities.csv
 │ └── slack_messages.csv
+
 ├── src/
+
 │ ├── extract/
+
 │ │ └── extract_excel.py
+
 │ ├── transform/
+
 │ │ ├── clean_rh.py
+
 │ │ ├── calculate_distance.py
 │ │ ├── simulate_strava.py
 │ │ ├── business_rules.py
 │ │ └── slack_generator.py
+
 │ ├── streaming/
+
 │ │ └── strava_producer.py
+
 │ └── monitoring/
+
 │ └── monitoring.py
+
 ├── pipeline.py
 ├── strava_consumer_csv.py
 ├── import_csv_to_postgres.py
