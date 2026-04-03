@@ -40,6 +40,7 @@ Sport Data Solution souhaite encourager la pratique sportive de ses collaborateu
 ## Structure du projet
 
 Sport-data-solution/
+
 ├── data/
 
 │ ├── raw/
@@ -171,7 +172,7 @@ Base : strava
 
 Utilisateur : postgres
 
-Mot de passe : postgres
+Mot de passe : xxxxxxx
 
 Importer la table athlete_stats
 
