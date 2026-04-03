@@ -22,18 +22,8 @@ Sport Data Solution souhaite encourager la pratique sportive de ses collaborateu
 ---
 
 ## Architecture technique
-┌─────────────┐  ┌─────────────┐  ┌─────────────┐
-│ Excel RH │ ──▶ │ Producer │ ──▶ │ Kafka │
-│ │ │ (Python) │  │ (Redpanda) │
-└─────────────┘  └─────────────┘  └──────┬──────┘
-│
-▼
-┌─────────────┐ ┌─────────────┐ ┌─────────────┐
-│ Power BI │ ◀── │ PostgreSQL │ ◀── │ Consumer │
-│ │ │ │ │ (Python) │
-└─────────────┘ └─────────────┘ └─────────────┘
 
-text
+![Diagramme des flux](kestra/Diagramme-des-flux.png)
 
 ### Composants utilisés
 
