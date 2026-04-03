@@ -23,7 +23,7 @@ Sport Data Solution souhaite encourager la pratique sportive de ses collaborateu
 
 ## Architecture technique
 
-![Diagramme des flux](kestra/Diagramme-des-flux.png)
+![Architecture du pipeline](C:/Users/khali/Downloads/Git%20Workflow%20Commit%20Pipeline-2026-04-03-105554.png)
 
 ### Composants utilisés
 
