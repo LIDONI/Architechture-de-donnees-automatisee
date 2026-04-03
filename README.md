@@ -15,9 +15,9 @@ Sport Data Solution souhaite encourager la pratique sportive de ses collaborateu
 
 ### Objectifs du POC
 
-- ✅ Tester la faisabilité technique
-- ✅ Identifier les données nécessaires
-- ✅ Calculer l'impact financier pour l'entreprise
+-  Tester la faisabilité technique
+-  Identifier les données nécessaires
+-  Calculer l'impact financier pour l'entreprise
 
 ---
 
@@ -159,25 +159,25 @@ python import_csv_to_postgres.py
 ```
 
 ### Étape 4 – Visualisation Power BI
-```
-Ouvrir Power BI Desktop
 
-Obtenir des données → PostgreSQL
+- Ouvrir Power BI Desktop
+
+- Obtenir des données → PostgreSQL
 
 Renseigner :
 
-Serveur : localhost
+- Serveur : localhost
 
-Base : strava
+- Base : strava
 
-Utilisateur : postgres
+- Utilisateur : postgres
 
-Mot de passe : xxxxxxx
+- Mot de passe : xxxxxxx
 
-Importer la table athlete_stats
+- Importer la table athlete_stats
 
-Créer les dashboards
-```
+- Créer les dashboards
+
 
 # 👤 Owner
 
