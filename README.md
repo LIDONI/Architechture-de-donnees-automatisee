@@ -55,12 +55,15 @@ Sport-data-solution/
 │ ├── raw/
 
 │ │ ├── Donnees_RH.xlsx
+
 │ │ └── Donnees_Sportive.xlsx
 
 │ └── processed/
 
 │ ├── final_dataset.csv
+
 │ ├── strava_activities.csv
+
 │ └── slack_messages.csv
 
 ├── src/
@@ -74,8 +77,11 @@ Sport-data-solution/
 │ │ ├── clean_rh.py
 
 │ │ ├── calculate_distance.py
+
 │ │ ├── simulate_strava.py
+
 │ │ ├── business_rules.py
+
 │ │ └── slack_generator.py
 
 │ ├── streaming/
@@ -87,8 +93,11 @@ Sport-data-solution/
 │ └── monitoring.py
 
 ├── pipeline.py
+
 ├── strava_consumer_csv.py
+
 ├── import_csv_to_postgres.py
+
 └── requirements.txt
 
 text
@@ -102,6 +111,7 @@ text
 ```bash
 git clone <url-du-projet>
 cd Sport-data-solution
+
 2. Créer l'environnement virtuel
 bash
 python -m venv venv
