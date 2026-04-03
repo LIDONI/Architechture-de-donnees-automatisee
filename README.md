@@ -103,3 +103,77 @@ text
 
 - cd Sport-data-solution
 ```
+### 2. Créer l'environnement virtuel
+
+```
+- python -m venv venv
+- venv\Scripts\activate      # Windows
+- source venv/bin/activate   # Linux / Mac
+```
+
+### 3. Installer les dépendances
+
+```
+pip install -r requirements.txt
+```
+
+### 4. Démarrer les conteneurs Docker
+```
+- docker start redpanda
+- docker start postgres
+```
+## Exécution du pipeline
+
+### Étape 1 – Pipeline batch (génération initiale)
+
+python pipeline.py
+
+**Fichiers générés :**
+```
+- data/processed/final_dataset.csv
+
+- data/processed/strava_activities.csv
+
+- data/processed/slack_messages.csv
+
+- data/monitoring/monitoring_report.json
+```
+
+ ### Étape 2 – Streaming Kafka
+
+**Terminal 1 – Consumer**
+
+```
+python strava_consumer_csv.py
+```
+
+**Terminal 2 – Producer**
+```
+python src/streaming/strava_producer.py
+```
+
+### Étape 3 – Import dans PostgreSQL
+```
+python import_csv_to_postgres.py
+```
+
+### Étape 4 – Visualisation Power BI
+```
+Ouvrir Power BI Desktop
+
+Obtenir des données → PostgreSQL
+
+Renseigner :
+
+Serveur : localhost
+
+Base : strava
+
+Utilisateur : postgres
+
+Mot de passe : postgres
+
+Importer la table athlete_stats
+
+Créer les dashboards
+```
