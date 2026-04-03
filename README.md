@@ -160,9 +160,9 @@ python import_csv_to_postgres.py
 
 ### Étape 4 – Visualisation Power BI
 
-- Ouvrir Power BI Desktop
+**Ouvrir Power BI Desktop**
 
-- Obtenir des données → PostgreSQL
+**Obtenir des données → PostgreSQL**
 
 Renseigner :
 
